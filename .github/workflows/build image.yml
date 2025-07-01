@@ -23,7 +23,7 @@ jobs:
 
       - name: Tag Image with Workflow Run Number
         run: |
-          docker tag sooyaa02/noteapi:latest sooyaa02/noteapi:${{ github.run_number }}
+          docker tag simanus/noteapi:latest simanus/noteapi:${{ github.run_number }}
 
       - name: Push Image with Version Tag
-        run: docker push sooyaa02/noteapi:${{ github.run_number }}
+        run: docker push simanus/noteapi:${{ github.run_number }}

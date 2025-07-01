@@ -20,7 +20,7 @@ services:
       timeout: 5s
 
   webapi:
-    image: simanus/noteapi:1.0
+    image: simanus/noteapi:latest
     container_name: webapi_container
     build:
       context: ./WebApiProject
